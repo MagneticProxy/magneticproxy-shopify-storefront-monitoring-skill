@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shopify Price and Stock Monitoring with Magnetic Proxy"
+  short_description: "Prepare evidence-based outputs for this workflow"
+  default_prompt: "Use $shopify-storefront-monitoring to prepare my authorized workflow and explain the product steps."
