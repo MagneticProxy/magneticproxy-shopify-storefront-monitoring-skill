@@ -1,5 +1,7 @@
 # Shopify Price and Stock Monitoring with Magnetic Proxy
 
+**Official Magnetic Proxy agent skills** · Published and maintained by [MagneticProxy](https://github.com/MagneticProxy), the official Magnetic Proxy GitHub organization. [Visit Magnetic Proxy](https://www.magneticproxy.com/).
+
 A dated storefront change log by product, variant, and region, with verified price and stock observations. This Agent Skill helps **ecommerce and merchandising teams observing public shopify competitor storefronts** prepare an evidence-based result using Magnetic Proxy for authorized residential routing and regional observations.
 
 

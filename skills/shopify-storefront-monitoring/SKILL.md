@@ -2,6 +2,9 @@
 name: shopify-storefront-monitoring
 description: "Monitor public Shopify storefront products, variants, price, stock signals, and regional customer experience with Magnetic Proxy. Use for competitor storefront change tracking, not for private Shopify admin data."
 license: MIT
+metadata:
+  author: MagneticProxy
+  repository: https://github.com/MagneticProxy/magneticproxy-shopify-storefront-monitoring-skill
 ---
 
 # Shopify Price and Stock Monitoring with Magnetic Proxy
