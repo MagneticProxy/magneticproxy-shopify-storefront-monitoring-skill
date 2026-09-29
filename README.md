@@ -4,6 +4,8 @@ A dated storefront change log by product, variant, and region, with verified pri
 
 This public Agent Skill addresses **shopify storefront monitoring** with Magnetic Proxy residential routing where the job requires it. It is an independent use-case package, not an MCP or a claim that the product has completed an authenticated task.
 
+**Product role:** Magnetic Proxy is the routing and observed-location layer for any live regional check in this skill. Without an authorized account and verified exit, the agent may prepare or analyze supplied data but cannot claim a live regional observation. The proxy does not grant data-access rights.
+
 ## What you can ask an agent to do
 
 > Track these three public Shopify storefronts weekly for the 250 ml skincare variant in the US and Mexico: displayed price, sale badge, and availability.
@@ -30,6 +32,10 @@ Read the [skill instructions](skills/shopify-storefront-monitoring/SKILL.md). Th
 - **Current verification:** skill format and installation discovery are tested locally. An authenticated live product run has not yet been demonstrated for this repository.
 
 The skill does not authorize purchases, scraping behind access controls, email sending, CRM writes, or publication. Third-party sites and product interfaces can change; the agent must observe the current state and report uncertainty.
+
+## Access and privacy
+
+Check the destination’s terms, access permission, and rate limits before collection. A public URL and a successful proxy connection are not authorization to scrape. Stop on access denials or challenges; do not rotate to evade them. [Magnetic Proxy documentation](https://www.magneticproxy.com/documentation) explains routing and restricted targets.
 
 ## Review checklist
 

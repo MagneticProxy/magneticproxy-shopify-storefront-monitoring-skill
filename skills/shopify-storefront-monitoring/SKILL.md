@@ -11,6 +11,16 @@ description: "Monitor public Shopify storefront products, variants, price, stock
 
 **Need from the user:** User-approved public storefront URLs, product/variant identifiers, countries, cadence, and the fields that matter.
 
+## Magnetic Proxy step
+
+For a live regional observation, use the user's permitted Magnetic Proxy account and a compatible browser/computer tool or proxy client. Inspect the current account and Capsule before assuming a route. For repeat monitoring prefer the current Price Monitoring Capsule when available; for a small permitted pilot use an available suitable Capsule. The [main product skill](https://github.com/MagneticProxy/magneticproxy-residential-proxy-agent-skills/tree/main/skills/magneticproxy) contains setup and troubleshooting detail; if it is not installed, consult the [current official documentation](https://www.magneticproxy.com/documentation). No official MCP is assumed. Verify the exit country in the same route used for collection, then verify the target separately. If login, route verification, or the target fails, stop that observation and report it as unverified. Never use a proxy to bypass a target restriction, CAPTCHA, access control, or a documented block.
+
+## Access check before any live collection
+
+Check the specific destination's current terms, applicable API/license or written permission, robots instructions where relevant, rate limits, and the user's right to collect and use the requested fields. A public page or working proxy is not permission for automated extraction. Use a small, declared scope and a truthful client identity. On a denial, CAPTCHA, `403`, `429`, account restriction, or uncertain permission, stop that route; do not rotate IPs, change user agents, or switch Capsules to continue. Use a licensed data source or user-provided records when available and label any regional browser check as pending until permitted and observed. Keep short factual observations and links; do not republish page bodies, images, reviews, personal data, or copyrighted catalogs.
+
+For Shopify, check both the specific merchant storefront rules and any Shopify API agreement that applies to the chosen access route. Do not assume every public store permits automated monitoring or use an undocumented storefront endpoint as a substitute for authorization.
+
 ## Workflow
 
 1. Confirm each target is a public storefront and define the exact product/variant and regional browsing context. Do not access a merchant admin or private API without separate authorization.
@@ -18,11 +28,6 @@ description: "Monitor public Shopify storefront products, variants, price, stock
 3. Capture public product title, canonical URL, variant options, displayed price and compare-at price if shown, availability wording, shipping/promotion context, and evidence timestamp. Distinguish `out of stock`, `not displayed`, and `inaccessible`.
 4. Compare with the previous snapshot for the same variant and the same storefront market. Recheck a change before reporting it as confirmed. Record added/removed catalog items separately from stock transitions.
 5. Deliver a change log and coverage report by store and region. Explain any locale mismatch, anti-bot stop, or uncertain variant mapping; do not infer actual inventory quantity from a public stock label.
-
-
-## Magnetic Proxy step
-
-Use the user's permitted Magnetic Proxy account and a compatible browser/computer tool or proxy client. Inspect the current account and Capsule before assuming a route. For repeat monitoring prefer the current Price Monitoring Capsule when available; for a small permitted pilot use an available suitable Capsule. The [main product skill](https://github.com/MagneticProxy/magneticproxy-residential-proxy-agent-skills/tree/main/skills/magneticproxy) contains setup and troubleshooting detail; if it is not installed, consult the [current official documentation](https://www.magneticproxy.com/documentation). No official MCP is assumed. Verify the exit country in the same route used for collection, then verify the target separately. If login, route verification, or the target fails, stop that observation and report it as unverified. Never use a proxy to bypass a target restriction, CAPTCHA, access control, or a documented block.
 
 ## Output contract
 
