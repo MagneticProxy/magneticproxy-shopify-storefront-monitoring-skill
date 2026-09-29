@@ -24,6 +24,16 @@ Or copy this prompt into an agent that supports skill installation:
 
 Read the [skill instructions](skills/shopify-storefront-monitoring/SKILL.md). The agent needs compatible tools and access to your authenticated account to operate Magnetic Proxy; installation alone does not provide that access.
 
+## Recommended product skill
+
+For full product operation, install the companion brand skill too:
+
+```bash
+npx skills add MagneticProxy/magneticproxy-residential-proxy-agent-skills --skill magneticproxy
+```
+
+The use-case skill defines the job and output; the brand skill helps configure and use the actual product.
+
 ## Scope and trust
 
 - **Input:** User-approved public storefront URLs, product/variant identifiers, countries, cadence, and the fields that matter.
@@ -36,6 +46,8 @@ The skill does not authorize purchases, scraping behind access controls, email s
 ## Access and privacy
 
 Check the destination’s terms, access permission, and rate limits before collection. A public URL and a successful proxy connection are not authorization to scrape. Stop on access denials or challenges; do not rotate to evade them. [Magnetic Proxy documentation](https://www.magneticproxy.com/documentation) explains routing and restricted targets.
+
+Magnetic Proxy is not affiliated with, endorsed by, or sponsored by Shopify. References to Shopify describe the third-party use case.
 
 ## Review checklist
 
